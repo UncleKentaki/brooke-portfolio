@@ -24,7 +24,7 @@ body {
 }
 
 .cover-container {
-  max-width: 42em;
+  max-width: 70%;
 }
 
 
@@ -35,6 +35,7 @@ body {
 .nav-masthead .nav-link {
   color: rgba(255, 255, 255, .5);
   border-bottom: .25rem solid transparent;
+  font-size: 1.25em;
 }
 
 .nav-masthead .nav-link:hover,
@@ -43,10 +44,77 @@ body {
 }
 
 .nav-masthead .nav-link + .nav-link {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
+}
+
+.logo {
+  font-size: 2em;
+}
+
+/* Slides */
+
+#slide1 {
+ transform: rotate(90deg);
+}
+
+.carousel { z-index: -99; } /* keeps this behind all content */
+.carousel .item {
+position: fixed; 
+ opacity: 1;
+ left:0 !important;
+width: 100%; height: 100%;
+-webkit-transition: opacity 0.5s;
+-moz-transition: opacity 0.5s;
+-ms-transition: opacity 0.5s;
+-o-transition: opacity 0.5s;
+transition: opacity 0.5s;
+}
+.carousel .one {
+background: url(/assets/images/slide1.JPG);
+background-size: cover;
+-moz-background-size: cover;
+}
+.carousel .two {
+background: url(/assets/images/slide2.PNG);
+background-size: cover;
+-moz-background-size: cover;
+}
+.carousel .three {
+background: url(/assets/images/slide3.PNG);
+background-size: cover;
+-moz-background-size: cover;
+}
+
+.carousel .active {
+opacity: 1 !important;
+}
+
+.carousel .left {
+opacity: 1 !important;
+-webkit-transition: opacity 0.5s  !important;
+-moz-transition: opacity 0.5s  !important;
+-ms-transition: opacity 0.5s  !important;
+-o-transition: opacity 0.5s  !important;
+transition: opacity 0.5s  !important;
+}
+
+.carousel-control-next {
+  margin-top: 50vh;
+  margin-right: -10vw;
+  scale: 175%;
+}
+
+.carousel-control-prev {
+  margin-top: 50vh;
+  margin-left: -10vw;
+  scale: 175%;
+}
+
+.carousel-indicators {
+  position: fixed;
 }
